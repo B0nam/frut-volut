@@ -5,9 +5,16 @@ import { GroupsModule } from './groups/groups.module';
 import { EventsModule } from './events/events.module';
 import { ParticipationsModule } from './participations/participations.module';
 import { UsersModule } from './users/users.module';
+import { DatabaseModule } from './database/database.module';
 
 @Module({
-  imports: [GroupsModule, EventsModule, ParticipationsModule, UsersModule],
+  imports: [
+    GroupsModule,
+    EventsModule,
+    ParticipationsModule,
+    UsersModule,
+    DatabaseModule,
+  ],
   controllers: [AppController],
   providers: [AppService],
 })
